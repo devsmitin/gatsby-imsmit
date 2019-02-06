@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
 		title: `Smit Modi`,
-		description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-		author: `@gatsbyjs`
+		description: `A simple starter to get up and developing quickly with Gatsby.`,
+		author: `smit`
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
@@ -18,8 +18,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-starter-default`,
-				short_name: `starter`,
+				name: `imsmit - made with Gatsby.js`,
+				short_name: `imsmit`,
 				start_url: `/`,
 				background_color: `#cc0000`,
 				theme_color: `#cc0000`,
