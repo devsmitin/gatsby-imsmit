@@ -2,7 +2,17 @@ module.exports = {
 	siteMetadata: {
 		title: `Smit Modi`,
 		description: `A simple starter to get up and developing quickly with Gatsby.`,
-		author: `smit`
+		author: `smit`,
+		menuLinks: [
+			{
+				name: "home",
+				link: "/"
+			},
+			{
+				name: "page2",
+				link: "/page-2"
+			}
+		]
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,

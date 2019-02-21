@@ -1,41 +1,19 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
+import { Link } from "gatsby";
 
-const Header = ({ siteTitle }) => (
-	<header
-		style={{
-			background: `#cc0000`
-		}}
-	>
-		<div
-			style={{
-				margin: `0 auto`,
-				maxWidth: 640,
-				padding: `1rem`
-			}}
-		>
-			<h1 style={{ margin: 0 }}>
-				<Link
-					to="/"
-					style={{
-						color: `white`,
-						textDecoration: `none`
-					}}
-				>
-					{siteTitle}
-				</Link>
-			</h1>
-		</div>
-	</header>
+const Header = ({ siteTitle, menuLinks }) => (
+	<nav className="navbar navbar-light bg-light">
+		<ul className="navbar-nav">
+			{menuLinks.map(link => (
+				<li key={link.name} className="nav-item">
+					<Link className="nav-link" to={link.link}>
+						{" "}
+						{link.name}
+					</Link>
+				</li>
+			))}
+		</ul>
+	</nav>
 );
-
-Header.propTypes = {
-	siteTitle: PropTypes.string
-};
-
-Header.defaultProps = {
-	siteTitle: ``
-};
 
 export default Header;
