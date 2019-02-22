@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
 				/>
 
 				<main
-					className="py-3 badge-dark text-white"
+					className="py-3 bg-dark text-white"
 					style={{
 						minHeight: "calc(100vh - 112px)"
 					}}
