@@ -5,11 +5,11 @@ module.exports = {
 		author: `smit`,
 		menuLinks: [
 			{
-				name: "home",
+				name: "Home",
 				link: "/"
 			},
 			{
-				name: "page2",
+				name: "Page2",
 				link: "/page-2"
 			}
 		]
@@ -31,8 +31,6 @@ module.exports = {
 				name: `imsmit - made with Gatsby.js`,
 				short_name: `imsmit`,
 				start_url: `/`,
-				background_color: `#cc0000`,
-				theme_color: `#cc0000`,
 				display: `minimal-ui`,
 				icon: `src/images/superman.png` // This path is relative to the root of the site.
 			}

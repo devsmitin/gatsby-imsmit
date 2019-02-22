@@ -26,20 +26,27 @@ const Layout = ({ children }) => (
 					menuLinks={data.site.siteMetadata.menuLinks}
 					siteTitle={data.site.siteMetadata.title}
 				/>
-				<div
+
+				<main
+					className="py-3 badge-dark text-white"
 					style={{
-						margin: `0 auto`,
-						maxWidth: 640,
-						padding: `1rem`
+						minHeight: "calc(100vh - 112px)"
 					}}
 				>
-					<main>{children}</main>
-					<footer>
+					<div className="container">{children}</div>
+				</main>
+				<footer className="bg-secondary text-white-50 py-3">
+					<div className="container">
 						© {new Date().getFullYear()}, Built with
 						{` `}
-						<a href="https://www.gatsbyjs.org">Gatsby</a>
-					</footer>
-				</div>
+						<a
+							href="https://www.gatsbyjs.org"
+							className="text-white"
+						>
+							Gatsby
+						</a>
+					</div>
+				</footer>
 			</>
 		)}
 	/>
