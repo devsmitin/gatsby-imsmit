@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 const Header = ({ siteTitle, menuLinks }) => (
-	<nav className="navbar navbar-expand navbar-light bg-warning shadow-sm">
+	<nav className="navbar navbar-expand navbar-light bg-light">
 		<div className="container">
 			<Link className="navbar-brand font-weight-bolder" to={"/"}>
 				{siteTitle}

@@ -28,20 +28,19 @@ const Layout = ({ children }) => (
 				/>
 
 				<main
-					className="py-3 bg-dark text-white"
 					style={{
 						minHeight: "calc(100vh - 112px)"
 					}}
 				>
-					<div className="container">{children}</div>
+					{children}
 				</main>
-				<footer className="bg-secondary text-white-50 py-3">
-					<div className="container">
+				<footer className="bg-secondary text-white py-3">
+					<div className="container-fluid">
 						© {new Date().getFullYear()}, Built with
 						{` `}
 						<a
 							href="https://www.gatsbyjs.org"
-							className="text-white"
+							className="font-weight-bold text-white"
 						>
 							Gatsby
 						</a>
