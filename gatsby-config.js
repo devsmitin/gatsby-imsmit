@@ -33,7 +33,7 @@ module.exports = {
 				start_url: `/`,
 				background_color: `#ffc107`,
 				theme_color: `#ffc107`,
-				display: `minimal-ui`,
+				display: `standalone`,
 				icon: `src/images/superman.png` // This path is relative to the root of the site.
 			}
 		},
