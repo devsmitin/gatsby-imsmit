@@ -4,25 +4,32 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const IndexPage = () => (
-	<Layout>
-		<SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-		<header className="bg-secondary text-white py-5">
-			<div className="container py-5">
-				<h1 className="display-1">Welcome</h1>
-			</div>
-		</header>
-		<section className="bg-light">
-			<div className="container py-5">
-				<h2>Section title</h2>
-				<p className="lead">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Excepturi vero ad nulla repellendus ipsum. Voluptatum magnam
-					dignissimos natus, placeat hic officiis, voluptas,
-					repellendus sequi cum ratione rerum ut inventore temporibus.
-				</p>
-			</div>
-		</section>
-	</Layout>
+    <Layout>
+        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <header className="py-5">
+            <div className="container">
+                <h1 className="font-weight-bolder mb-4">
+                    Welcome to my Gatsby site!
+                </h1>
+                <img
+                    className="img-fluid rounded featured-img"
+                    alt="Featured Img"
+                    src="https://images.unsplash.com/photo-1533282960533-51328aa49826?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1630&q=80"
+                />
+            </div>
+        </header>
+        <section className="py-5">
+            <div className="container">
+                <h2>Section title</h2>
+                <p className="lead">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Excepturi vero ad nulla repellendus ipsum. Voluptatum magnam
+                    dignissimos natus, placeat hic officiis, voluptas,
+                    repellendus sequi cum ratione rerum ut inventore temporibus.
+                </p>
+            </div>
+        </section>
+    </Layout>
 );
 
 export default IndexPage;
