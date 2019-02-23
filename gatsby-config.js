@@ -11,6 +11,10 @@ module.exports = {
 			{
 				name: "Page2",
 				link: "/page-2"
+			},
+			{
+				name: "Blogs",
+				link: "/blogposts"
 			}
 		]
 	},
@@ -35,6 +39,13 @@ module.exports = {
 				theme_color: `#ffc107`,
 				display: `standalone`,
 				icon: `src/images/superman.png` // This path is relative to the root of the site.
+			}
+		},
+		{
+			resolve: `gatsby-source-contentful`,
+			options: {
+				spaceId: `9mo5kzws8c9t`,
+				accessToken: `e6e625df6391539b2aaff09ae7a2dcd670bfd1dfb75e5eeeb24291d7f0a9df99`
 			}
 		},
 		// this (optional) plugin enables Progressive Web App + Offline functionality

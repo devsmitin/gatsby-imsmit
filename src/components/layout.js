@@ -35,15 +35,8 @@ const Layout = ({ children }) => (
 					{children}
 				</main>
 				<footer className="bg-secondary text-white py-3">
-					<div className="container-fluid">
-						© {new Date().getFullYear()}, Built with
-						{` `}
-						<a
-							href="https://www.gatsbyjs.org"
-							className="font-weight-bold text-white"
-						>
-							Gatsby
-						</a>
+					<div className="container">
+						© {new Date().getFullYear()}, Built with Gatsby
 					</div>
 				</footer>
 			</>
