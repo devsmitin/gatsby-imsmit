@@ -35,8 +35,8 @@ module.exports = {
                 name: `imsmit - made with Gatsby.js`,
                 short_name: `imsmit`,
                 start_url: `/`,
-                background_color: `#ffc107`,
-                theme_color: `#ffc107`,
+                background_color: `#fff`,
+                theme_color: `#fff`,
                 display: `standalone`,
                 icon: `src/images/superman.png` // This path is relative to the root of the site.
             }
