@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `SMIT19.`,
+        title: `SMIT.19`,
         description: `A simple starter to get up and developing quickly with Gatsby.`,
         author: `smit`,
         menuLinks: [
@@ -14,7 +14,7 @@ module.exports = {
             // },
             {
                 name: "About",
-                link: "/"
+                link: "/about"
             }
         ]
     },
@@ -46,6 +46,12 @@ module.exports = {
             options: {
                 spaceId: `9mo5kzws8c9t`,
                 accessToken: `e6e625df6391539b2aaff09ae7a2dcd670bfd1dfb75e5eeeb24291d7f0a9df99`
+            }
+        },
+        {
+            resolve: "gatsby-transformer-remark",
+            options: {
+                plugins: [] // just in case those previously mentioned remark plugins sound cool :)
             }
         },
         {

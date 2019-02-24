@@ -10,7 +10,7 @@ const Header = ({ siteTitle, menuLinks }) => (
             >
                 {siteTitle}
             </Link>
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav ml-auto">
                 {menuLinks.map(link => (
                     <li key={link.name} className="nav-item">
                         <Link className="nav-link text-dark" to={link.link}>

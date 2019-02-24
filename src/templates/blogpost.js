@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const BlogPost = ({ data }) => {
-    const { title, body, image, tags } = data.contentfulBlogPost;
+    const { title, body, image, tags, createdAt } = data.contentfulBlogPost;
     return (
         <Layout>
             <SEO title={title} />
@@ -17,8 +17,15 @@ const BlogPost = ({ data }) => {
                             alt={title}
                             src={image.file.url}
                         />
-                        <p className="body-text">{body.body}</p>
-
+                        <div className="mb-3 text-right">
+                            <em>Published on: {createdAt}</em>
+                        </div>
+                        <div
+                            className="mb-5"
+                            dangerouslySetInnerHTML={{
+                                __html: body.childMarkdownRemark.html
+                            }}
+                        />
                         <div className="clearfix">
                             <span className="mr-3">Tags:</span>
                             <ul className="tags list-unstyled d-inline-block">
@@ -62,14 +69,16 @@ export const pageQuery = graphql`
             title
             slug
             body {
-                body
+                childMarkdownRemark {
+                    html
+                }
             }
             image {
                 file {
                     url
                 }
             }
-            createdAt(formatString: "DD-MM-YYYY")
+            createdAt(formatString: "MMM DD, YYYY")
             tags
         }
     }

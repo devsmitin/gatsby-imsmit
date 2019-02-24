@@ -21,14 +21,28 @@ const IndexPage = () => (
         </header>
         <section className="py-5">
             <div className="container">
-                <h2>Section title</h2>
-                <Image />
-                <p className="lead">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Excepturi vero ad nulla repellendus ipsum. Voluptatum magnam
-                    dignissimos natus, placeat hic officiis, voluptas,
-                    repellendus sequi cum ratione rerum ut inventore temporibus.
-                </p>
+                <h2 className="mb-3">Section title</h2>
+                <div className="row">
+                    <div className="col-md-4 order-md-1">
+                        <Image />
+                    </div>
+                    <div className="col-md-8">
+                        <p className="lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Excepturi vero ad nulla repellendus ipsum.
+                            Voluptatum magnam dignissimos natus, placeat hic
+                            officiis, voluptas, repellendus sequi cum ratione
+                            rerum ut inventore temporibus.
+                        </p>
+                        <p className="lead">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Excepturi vero ad nulla repellendus ipsum.
+                            Voluptatum magnam dignissimos natus, placeat hic
+                            officiis, voluptas, repellendus sequi cum ratione
+                            rerum ut inventore temporibus.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </Layout>
