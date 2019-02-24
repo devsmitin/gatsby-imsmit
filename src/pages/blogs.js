@@ -16,10 +16,10 @@ const BlogList = ({ data }) => {
             </header>
             <section className="">
                 <div className="container">
-                    <div className="blogposts row mb-5">
+                    <div className="blogposts row">
                         {blogPosts.map(({ node: post }) => (
                             <div className="col-lg-6" key={post.id}>
-                                <div className="card bg-light shadow-lg border-light mb-5">
+                                <div className="card bg-light shadow border-light mb-5">
                                     <div className="row no-gutters">
                                         <div className="col-md-5">
                                             <img
@@ -48,9 +48,9 @@ const BlogList = ({ data }) => {
                                                 </ul>
                                                 <Link
                                                     className="d-block text-success font-weight-bold"
-                                                    to={`/blogpost/${
+                                                    to={`/blogs/${
                                                         post.slug
-                                                    }`}
+                                                        }`}
                                                 >
                                                     Read More
                                                 </Link>
@@ -61,7 +61,7 @@ const BlogList = ({ data }) => {
                             </div>
                         ))}
                     </div>
-                    <div className="text-center">
+                    <div className="text-center mb-3">
                         <Link className="text-success font-weight-bold" to="/">
                             Go back to the homepage
                         </Link>

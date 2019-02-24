@@ -15,3 +15,29 @@ p {
     width: 100%;
     object-fit: cover;
 }
+
+.fade-wrapper {
+    width: 100%;
+}
+
+.fade-wrapper:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    content: '';
+    background: linear-gradient(hsla(0,0%,100%,.8),hsla(0,0%,100%,.9) 50%,#fff);
+}
+.featured-img-background {
+    /* position: absolute; */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.fade-wrapper + .container {
+    position: relative;
+    z-index: 1;
+}

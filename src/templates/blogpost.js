@@ -8,6 +8,13 @@ const BlogPost = ({ data }) => {
     return (
         <Layout>
             <SEO title={title} />
+            <div className="fade-wrapper position-absolute">
+                <img
+                    className="img-fluid featured-img-background"
+                    alt={title}
+                    src={image.file.url}
+                />
+            </div>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8 py-5">
@@ -43,16 +50,16 @@ const BlogPost = ({ data }) => {
                         <div className="clearfix">
                             <Link
                                 className="btn btn-sm btn-outline-success"
-                                to="/bloglist"
+                                to="/blogs"
                             >
                                 All Posts
-                            </Link>
+                                </Link>
                             <Link
                                 className="float-right btn btn-sm btn-outline-success"
                                 to="/"
                             >
                                 Back to Home
-                            </Link>
+                                </Link>
                         </div>
                     </div>
                 </div>
