@@ -1,7 +1,14 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    font-family: 'Merriweather', serif;
+    line-height: 1.8;
+}
+
 .blog-thumbnail {
     min-height: 220px;
     object-fit: cover;
-    width: 95%;
 }
 .featured-img {
     height: 300px;

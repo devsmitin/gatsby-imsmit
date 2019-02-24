@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const BlogPosts = ({ data }) => {
+const BlogList = ({ data }) => {
     const blogPosts = data.allContentfulBlogPost.edges;
     return (
         <Layout>
@@ -14,16 +14,16 @@ const BlogPosts = ({ data }) => {
                     <h1 className="font-weight-bolder">All Blogs</h1>
                 </div>
             </header>
-            <section className="py-5">
+            <section className="">
                 <div className="container">
                     <div className="blogposts row mb-5">
                         {blogPosts.map(({ node: post }) => (
-                            <div className="col-md-6" key={post.id}>
-                                <div className="card bg-light shadow-lg border-0 mb-3">
+                            <div className="col-lg-6" key={post.id}>
+                                <div className="card bg-light shadow-lg border-light mb-5">
                                     <div className="row no-gutters">
                                         <div className="col-md-5">
                                             <img
-                                                className="img-fluid blog-thumbnail rounded mt-n3 mb-3 ml-3 shadow-sm"
+                                                className="img-fluid blog-thumbnail rounded shadow-sm"
                                                 alt={post.title}
                                                 src={post.image.file.url}
                                             />
@@ -36,14 +36,23 @@ const BlogPosts = ({ data }) => {
                                                 <h2 className="font-weight-bolder">
                                                     {post.title}
                                                 </h2>
-                                                <span className="d-inline-block mb-2 text-primary" />
+                                                <ul className="tags list-unstyled">
+                                                    {post.tags.map(tag => (
+                                                        <li
+                                                            className="tag badge badge-pill badge-success font-weight-normal text-capitalize mr-2 px-2 py-1"
+                                                            key={tag}
+                                                        >
+                                                            {tag}
+                                                        </li>
+                                                    ))}
+                                                </ul>
                                                 <Link
                                                     className="d-block text-success font-weight-bold"
                                                     to={`/blogpost/${
                                                         post.slug
                                                     }`}
                                                 >
-                                                    Continue reading
+                                                    Read More
                                                 </Link>
                                             </div>
                                         </div>
@@ -63,7 +72,7 @@ const BlogPosts = ({ data }) => {
     );
 };
 
-export default BlogPosts;
+export default BlogList;
 
 export const query = graphql`
     query BlogPostsPageQuery {
@@ -72,7 +81,7 @@ export const query = graphql`
                 node {
                     id
                     title
-                    createdAt(formatString: "DD-MM-YYYY")
+                    createdAt(formatString: "MMM DD, YYYY")
                     slug
                     body {
                         body

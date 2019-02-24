@@ -1,20 +1,20 @@
 module.exports = {
     siteMetadata: {
-        title: `Smit Modi`,
+        title: `SMIT19.`,
         description: `A simple starter to get up and developing quickly with Gatsby.`,
         author: `smit`,
         menuLinks: [
             {
-                name: "Home",
-                link: "/"
+                name: "Blogs",
+                link: "/bloglist"
             },
             // {
             // 	name: "Page2",
             // 	link: "/page-2"
             // },
             {
-                name: "Blogs",
-                link: "/blogposts"
+                name: "About",
+                link: "/"
             }
         ]
     },
@@ -48,8 +48,16 @@ module.exports = {
                 accessToken: `e6e625df6391539b2aaff09ae7a2dcd670bfd1dfb75e5eeeb24291d7f0a9df99`
             }
         },
+        {
+            resolve: "gatsby-plugin-web-font-loader",
+            options: {
+                google: {
+                    families: ["Merriweather", "Montserrat:400,800"]
+                }
+            }
+        }
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.app/offline
-        "gatsby-plugin-offline"
+        // "gatsby-plugin-offline"
     ]
 };

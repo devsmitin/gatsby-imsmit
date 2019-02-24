@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Image from "../components/image";
 
 const IndexPage = () => (
     <Layout>
@@ -21,6 +22,7 @@ const IndexPage = () => (
         <section className="py-5">
             <div className="container">
                 <h2>Section title</h2>
+                <Image />
                 <p className="lead">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Excepturi vero ad nulla repellendus ipsum. Voluptatum magnam

@@ -9,39 +9,44 @@ const BlogPost = ({ data }) => {
         <Layout>
             <SEO title={title} />
             <div className="container">
-                <div className="blogpost py-5">
-                    <h1 className="font-weight-bolder mb-3">{title}</h1>
-                    <img
-                        className="img-fluid mb-3"
-                        alt={title}
-                        src={image.file.url}
-                    />
-                    <p className="body-text">{body.body}</p>
+                <div className="row justify-content-center">
+                    <div className="col-lg-8 py-5">
+                        <h1 className="font-weight-bolder mb-3">{title}</h1>
+                        <img
+                            className="img-fluid featured-img rounded mb-5"
+                            alt={title}
+                            src={image.file.url}
+                        />
+                        <p className="body-text">{body.body}</p>
 
-                    <ul className="tags list-unstyled">
-                        {tags.map(tag => (
-                            <li
-                                className="tag badge badge-pill badge-secondary mr-2"
-                                key={tag}
+                        <div className="clearfix">
+                            <span className="mr-3">Tags:</span>
+                            <ul className="tags list-unstyled d-inline-block">
+                                {tags.map(tag => (
+                                    <li
+                                        className="tag badge badge-pill badge-success font-weight-normal text-capitalize mr-2 px-2 py-1"
+                                        key={tag}
+                                    >
+                                        {tag}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="clearfix">
+                            <Link
+                                className="btn btn-sm btn-outline-success"
+                                to="/bloglist"
                             >
-                                {tag}
-                            </li>
-                        ))}
-                    </ul>
-
-                    <div className="clearfix">
-                        <Link
-                            className="d-block float-md-left text-success font-weight-bold"
-                            to="/blogposts"
-                        >
-                            View more posts
-                        </Link>
-                        <Link
-                            className="d-block float-md-right text-success font-weight-bold"
-                            to="/"
-                        >
-                            Back to Home
-                        </Link>
+                                All Posts
+                            </Link>
+                            <Link
+                                className="float-right btn btn-sm btn-outline-success"
+                                to="/"
+                            >
+                                Back to Home
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,6 +69,7 @@ export const pageQuery = graphql`
                     url
                 }
             }
+            createdAt(formatString: "DD-MM-YYYY")
             tags
         }
     }
