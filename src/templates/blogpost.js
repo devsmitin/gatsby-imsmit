@@ -17,16 +17,16 @@ const BlogPost = ({ data }) => {
                             alt={title}
                             src={image.file.url}
                         />
-                        <div className="mb-3 text-right">
-                            <em>Published on: {createdAt}</em>
-                        </div>
                         <div
-                            className="mb-5"
+                            className="mb-3"
                             dangerouslySetInnerHTML={{
                                 __html: body.childMarkdownRemark.html
                             }}
                         />
-                        <div className="clearfix">
+                        <div className="mb-2 text-muted">
+                            <small>Published on: {createdAt}</small>
+                        </div>
+                        <div className="clearfix mb-3">
                             <span className="mr-3">Tags:</span>
                             <ul className="tags list-unstyled d-inline-block">
                                 {tags.map(tag => (
