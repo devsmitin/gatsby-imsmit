@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-
 import Layout from "../components/layout";
+import Img from "gatsby-image";
 import SEO from "../components/seo";
 
 const BlogList = ({ data }) => {
@@ -22,10 +22,10 @@ const BlogList = ({ data }) => {
 								<div className="card bg-light shadow border-light mb-5">
 									<div className="row no-gutters">
 										<div className="col-md-5">
-											<img
+											<Img
 												className="img-fluid blog-thumbnail rounded shadow-sm"
 												alt={post.title}
-												src={post.image.file.url}
+												fluid={post.image.fluid}
 											/>
 										</div>
 										<div className="col-md-7">
@@ -86,8 +86,8 @@ export const query = graphql`
 						body
 					}
 					image {
-						file {
-							url
+						fluid(resizingBehavior: SCALE) {
+							...GatsbyContentfulFluid_tracedSVG
 						}
 					}
 					tags

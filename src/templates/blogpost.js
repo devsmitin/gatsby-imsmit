@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
+import Img from "gatsby-image";
 import SEO from "../components/seo";
 
 const BlogPost = ({ data }) => {
@@ -9,20 +10,20 @@ const BlogPost = ({ data }) => {
 		<Layout>
 			<SEO title={title} />
 			<div className="fade-wrapper position-absolute">
-				<img
+				<Img
 					className="img-fluid featured-img-background"
 					alt={title}
-					src={image.file.url}
+					fluid={image.fluid}
 				/>
 			</div>
 			<div className="container">
 				<div className="row justify-content-center">
 					<div className="col-lg-10 py-5">
 						<h1 className="font-weight-bolder mb-5">{title}</h1>
-						<img
+						<Img
 							className="img-fluid featured-img rounded mb-5"
 							alt={title}
-							src={image.file.url}
+							fluid={image.fluid}
 						/>
 						<div
 							className="mb-3"
@@ -81,8 +82,8 @@ export const pageQuery = graphql`
 				}
 			}
 			image {
-				file {
-					url
+				fluid(resizingBehavior: SCALE) {
+					...GatsbyContentfulFluid_tracedSVG
 				}
 			}
 			createdAt(formatString: "MMM DD, YYYY")

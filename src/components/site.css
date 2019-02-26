@@ -1,8 +1,15 @@
 html, body {
     font-family: 'Montserrat', sans-serif;
 }
-p {
+
+h1, h2, h3, h4, h5, h6
+.h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Merriweather', serif;
+}
+
+
+p {
+    margin-bottom: 1.5rem;
     line-height: 1.8;
 }
 
@@ -41,3 +48,4 @@ p {
     position: relative;
     z-index: 1;
 }
+
