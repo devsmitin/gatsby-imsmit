@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
 						<div className="clearfix">
 							<span>&copy; {new Date().getFullYear()} Smit</span>
 							<span className="float-right">
-								Built with Gatsby
+								Built with Gatsby / Contentful
 							</span>
 						</div>
 					</div>
