@@ -49,3 +49,8 @@ p {
     z-index: 1;
 }
 
+
+.bg-header {
+    background: linear-gradient(90deg, #fff 13px, transparent 1%) center,linear-gradient(#fff 13px, transparent 1%) center,#d0d2d3;
+    background-size: 15px 15px;
+}
