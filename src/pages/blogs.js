@@ -11,7 +11,7 @@ const BlogList = ({ data }) => {
 			<SEO title="Blog posts" />
 			<header className="py-5">
 				<div className="container">
-					<h1 className="font-weight-bolder">All Blogs</h1>
+					<h1 className="font-weight-bolder">My Blogs</h1>
 				</div>
 			</header>
 			<section className="">
@@ -60,7 +60,7 @@ const BlogList = ({ data }) => {
 							</div>
 						))}
 					</div>
-					<div className="text-center mb-3">
+					<div className="text-center mb-4">
 						<Link className="text-success font-weight-bold" to="/">
 							Go back to the homepage
 						</Link>
