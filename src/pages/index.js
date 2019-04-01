@@ -24,8 +24,9 @@ const IndexPage = () => (
 							<h1>Hi, I'm Smit.</h1>
 							<p className="lead font-weight-bold mb-md-0 hover-text">
 								I'm a Front-end <span>Developer</span>,{" "}
-								<span>Designer</span>, & <span>Superman</span>
-								from Ahmedabad, India. <span className="hover-text-hidden">
+								<span>Designer</span>, & <span>Superman</span>{" "}
+								from Ahmedabad, India.{" "}
+								<span className="hover-text-hidden">
 									(...ok not really{" "}
 									<span role="img" aria-label="smiley">
 										😆
