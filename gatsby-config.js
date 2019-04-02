@@ -36,7 +36,7 @@ module.exports = {
 				anonymize: true
 			}
 		},
-		`gatsby-plugin-sitemap`,
+		// `gatsby-plugin-sitemap`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
 		{
