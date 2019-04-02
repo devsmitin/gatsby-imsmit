@@ -11,6 +11,9 @@ const IndexPage = () => (
 		<SEO
 			title="Front-end Developer &amp; Designer"
 			keywords={[
+				`Smit`,
+				`Smit Modi`,
+				`imsmit`,
 				`Front-end`,
 				`Developer`,
 				`Designer`,
