@@ -4,7 +4,7 @@ module.exports = {
 		description: `Portfolio of Smit Modi, A Front-end Developer & Designer from Ahmedabad, India.`,
 		author: `smit`,
 		ogImage: `src/images/superman.png`,
-		siteURL: `imsmit.netlify.com`,
+		siteURL: `https://imsmit.netlify.com`,
 		menuLinks: [
 			{
 				name: "Blogs",
