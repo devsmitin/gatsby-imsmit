@@ -25,6 +25,18 @@ module.exports = {
 				path: `${__dirname}/src/images`
 			}
 		},
+		{
+			resolve: `gatsby-plugin-gtag`,
+			options: {
+				// your google analytics tracking id
+				trackingId: `UA-137494172-1`,
+				// Puts tracking script in the head instead of the body
+				head: true,
+				// enable ip anonymization
+				anonymize: true
+			}
+		},
+		`gatsby-plugin-sitemap`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
 		{
@@ -69,17 +81,6 @@ module.exports = {
 				// whitelist: ['whitelist'], // Don't remove this selector
 				// ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
 				// purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-			}
-		},
-		{
-			resolve: `gatsby-plugin-gtag`,
-			options: {
-				// your google analytics tracking id
-				trackingId: `UA-137494172-1`,
-				// Puts tracking script in the head instead of the body
-				head: true,
-				// enable ip anonymization
-				anonymize: true
 			}
 		}
 
