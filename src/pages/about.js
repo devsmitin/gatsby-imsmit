@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 
 const SecondPage = () => (
 	<Layout>
-		<SEO title="Page two" />
+		<SEO title="About Me" />
 		<header className="py-5">
 			<div className="container">
 				<h1 className="font-weight-bolder mb-4">Coming Soon!</h1>

@@ -8,7 +8,7 @@ const BlogList = ({ data }) => {
 	const blogPosts = data.allContentfulBlogPost.edges;
 	return (
 		<Layout>
-			<SEO title="Blog posts" />
+			<SEO title="My Blogs" />
 			<header className="py-5">
 				<div className="container">
 					<h1 className="font-weight-bolder">My Blogs</h1>

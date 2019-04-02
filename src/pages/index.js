@@ -8,7 +8,15 @@ import bioGraphic from "../images/undraw_responsive_6c8s.svg";
 
 const IndexPage = () => (
 	<Layout>
-		<SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+		<SEO
+			title="Front-end Developer &amp; Designer"
+			keywords={[
+				`Front-end`,
+				`Developer`,
+				`Designer`,
+				`Gatsby Developer`
+			]}
+		/>
 		<header className="py-3 bg-header">
 			<div className="container">
 				<div className="row">

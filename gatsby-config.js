@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
 		title: `SMIT.19`,
-		description: `Blog built with Gatsby and Contentful.`,
+		description: `Portfolio of Smit Modi, A Front-end Developer & Designer from Ahmedabad, India.`,
 		author: `smit`,
 		ogImage: `src/images/superman.png`,
 		siteURL: `imsmit.netlify.com`,
