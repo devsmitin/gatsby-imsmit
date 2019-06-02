@@ -1,6 +1,6 @@
 html,
 body {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -14,7 +14,7 @@ h6 .h1,
 .h4,
 .h5,
 .h6 {
-	font-family: "Merriweather", serif;
+	font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -87,4 +87,22 @@ p {
 
 .page-size {
 	min-height: calc(100vh - 221px);
+}
+
+
+.single-post {
+	font-size: 18px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+@media (min-width: 992px) {
+	.single-post {
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+	.single-post .featured-img {
+		width: 900px;
+		transform: translateX(-150px);
+		box-shadow: 3px 3px 3px 0 #ddd;
+	}
 }

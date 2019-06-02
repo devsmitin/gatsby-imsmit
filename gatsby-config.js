@@ -68,7 +68,7 @@ module.exports = {
 			resolve: "gatsby-plugin-web-font-loader",
 			options: {
 				google: {
-					families: ["Merriweather:700", "Montserrat:400,800"]
+					families: ["Poppins:700", "Open+Sans:400,800"]
 				}
 			}
 		},
