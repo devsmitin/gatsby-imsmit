@@ -27,8 +27,8 @@ p {
 	object-fit: cover;
 }
 .featured-img {
-	height: 300px;
 	width: 100%;
+	height: auto;
 	object-fit: cover;
 }
 
@@ -77,4 +77,14 @@ p {
 }
 .hover-text:hover span {
 	color: #28a745;
+}
+
+
+/* .page-size {
+	min-height: calc(100vh - 169px);
+	padding-top: 56px;
+} */
+
+.page-size {
+	min-height: calc(100vh - 221px);
 }
