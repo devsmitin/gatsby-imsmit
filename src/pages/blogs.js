@@ -14,7 +14,7 @@ const BlogList = ({ data }) => {
           <h1 className="font-weight-bolder">My Blogs</h1>
         </div>
       </header>
-      <section className="bg-light">
+      <section className="bg-light py-5">
         <div className="container">
           <div className="blogposts row">
             {blogPosts.map(({ node: post }) => (
