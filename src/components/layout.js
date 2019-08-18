@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
           <div className="container">
             <div className="clearfix">
               <p className="text-center font-weight-bold text-sm-left float-sm-left mb-3">
-                With ❤ by Smit
+                With <span role="img" aria-label="love">❤️</span> by Smit
               </p>
               <ul className="list-inline text-center font-weight-bold text-sm-right float-sm-right">
                 <li className="list-inline-item">
