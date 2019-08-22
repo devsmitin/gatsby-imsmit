@@ -1,9 +1,10 @@
 module.exports = {
 	siteMetadata: {
-		title: `SMIT.19`,
-		description: `Portfolio of Smit Modi, A Front-end Developer & Designer from Ahmedabad, India.`,
+		title: `Smit\'s`,
+		description: `Smit Modi, A Front-end Developer & Designer from Ahmedabad, India.`,
 		author: `smit`,
-		ogImage: `src/images/superman.png`,
+		twitterUsername : `@smilingsmit`,
+		ogImage: `/static/superman-af4627fe0a9dd31beeded7b058566b22.png`,
 		siteURL: `https://imsmit.netlify.com`,
 		menuLinks: [
 			{
@@ -11,8 +12,8 @@ module.exports = {
 				link: "/blogs"
 			},
 			{
-				name: "About",
-				link: "/about"
+				name: "Contact",
+				link: "/contact"
 			}
 		]
 	},
@@ -42,8 +43,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `SMIT.19 - Personal blog`,
-				short_name: `SMIT.19`,
+				name: `Smit\'s - Personal blog`,
+				short_name: `Smit\'s`,
 				start_url: `/`,
 				background_color: `#fff`,
 				theme_color: `#fff`,

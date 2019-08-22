@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 const BlogList = ({ data }) => {
@@ -9,26 +9,26 @@ const BlogList = ({ data }) => {
   return (
     <Layout>
       <SEO title="My Blogs" />
-      <header className="bg-light py-5">
+      <header className="py-5 border-bottom border-top">
         <div className="container">
           <h1 className="font-weight-bolder">My Blogs</h1>
         </div>
       </header>
-      <section className="bg-light py-5">
+      <section className="bg-header py-5">
         <div className="container">
           <div className="blogposts row">
             {blogPosts.map(({ node: post }) => (
-              <div className="col-lg-6" key={post.id}>
-                <div className="card bg-light shadow border-light mb-5">
-                  <div className="row no-gutters">
-                    <div className="col-md-5">
-                      <Img
+              <div className="col-lg-12" key={post.id}>
+                <div className="card shadow border-light mb-5">
+                  {/* <div className="row no-gutters"> */}
+                    {/* <div className="col-md-2"> */}
+                      {/* <Img
                         className="img-fluid blog-thumbnail rounded shadow-sm"
                         alt={post.title}
                         fluid={post.image.fluid}
-                      />
-                    </div>
-                    <div className="col-md-7">
+                      /> */}
+                    {/* </div> */}
+                    {/* <div className="col-md-10"> */}
                       <div className="card-body">
                         <h2 className="font-weight-bolder">
                           <Link
@@ -50,8 +50,8 @@ const BlogList = ({ data }) => {
                         </ul>
                         <div className="mb-1 text-muted">{post.createdAt}</div>
                       </div>
-                    </div>
-                  </div>
+                    {/* </div> */}
+                  {/* </div> */}
                 </div>
               </div>
             ))}

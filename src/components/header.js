@@ -7,7 +7,7 @@ const Header = ({ siteTitle, menuLinks }) => (
       <Link className="navbar-brand font-weight-bolder text-success" to={"/"}>
         {siteTitle}
       </Link>
-      <ul className="navbar-nav ml-auto">
+      <ul className="navbar-nav flex-fill">
         {menuLinks.map(link => (
           <li key={link.name} className="nav-item">
             <Link className="nav-link text-dark" to={link.link}>

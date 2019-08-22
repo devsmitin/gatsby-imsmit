@@ -20,7 +20,7 @@ const IndexPage = () => (
         `Gatsby Developer`,
       ]}
     />
-    <header className="py-3 bg-header">
+    <header className="py-3 bg-header border-top border-bottom">
       <div className="container">
         <div className="row">
           <div className="col-md-5">
@@ -33,11 +33,9 @@ const IndexPage = () => (
                 I'm a Front-end <span>Developer</span>, <span>Designer</span>, &{" "}
                 <span>Superman</span> from Ahmedabad, India.{" "}
                 <span className="hover-text-hidden">
-                  (...ok not really{" "}
                   <span role="img" aria-label="smiley">
-                    😆
+                    😎
                   </span>
-                  )
                 </span>
               </p>
             </div>

@@ -20,15 +20,15 @@ function SEO({ description, lang, meta, keywords, title, siteURL, ogImage }) {
             meta={[
               {
                 name: `description`,
-                content: metaDescription,
+                content: data.site.siteMetadata.metaDescription,
               },
               {
                 property: `og:url`,
-                content: siteURL,
+                content: data.site.siteMetadata.siteURL,
               },
               {
                 property: `og:image`,
-                content: ogImage,
+                content: data.site.siteMetadata.ogImage,
               },
               {
                 property: `og:title`,
@@ -36,7 +36,7 @@ function SEO({ description, lang, meta, keywords, title, siteURL, ogImage }) {
               },
               {
                 property: `og:description`,
-                content: metaDescription,
+                content: description,
               },
               {
                 property: `og:type`,
@@ -49,6 +49,10 @@ function SEO({ description, lang, meta, keywords, title, siteURL, ogImage }) {
               {
                 name: `twitter:creator`,
                 content: data.site.siteMetadata.author,
+              },
+              {
+                name: `twitter:image`,
+                content: data.site.siteMetadata.ogImage,
               },
               {
                 name: `twitter:title`,
@@ -98,6 +102,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        ogImage
       }
     }
   }
