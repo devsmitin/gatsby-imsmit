@@ -9,7 +9,7 @@ const BlogList = ({ data }) => {
   return (
     <Layout>
       <SEO title="My Blogs" />
-      <header className="py-5 border-bottom border-top">
+      <header className="py-5 bg-light border-bottom border-top">
         <div className="container">
           <h1 className="font-weight-bolder">My Blogs</h1>
         </div>
@@ -19,7 +19,7 @@ const BlogList = ({ data }) => {
           <div className="blogposts row">
             {blogPosts.map(({ node: post }) => (
               <div className="col-lg-12" key={post.id}>
-                <div className="card shadow border-light mb-5">
+                <div className="card blog-list-card shadow-sm mb-4">
                   {/* <div className="row no-gutters"> */}
                     {/* <div className="col-md-2"> */}
                       {/* <Img

@@ -28,7 +28,9 @@ const IndexPage = () => (
           </div>
           <div className="col-md-6 offset-md-1 d-flex align-items-center">
             <div className="content">
-              <h1>Hi, I'm Smit.</h1>
+              <h1>
+                <span className="shadow-line">Hi, I'm Smit.</span>
+              </h1>
               <p className="lead font-weight-bold mb-md-0 hover-text">
                 I'm a Front-end <span>Developer</span>, <span>Designer</span>, &{" "}
                 <span>Superman</span> from Ahmedabad, India.{" "}
