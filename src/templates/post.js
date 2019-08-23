@@ -30,7 +30,7 @@ const BlogPost = ({ data }) => {
               />
             </div>
             <div className="col-lg-10 mt-n4 mt-lg-n5">
-              <div className="px-4 px-lg-0">
+              <div className="px-3 px-lg-0">
                 <div className="bg-white p-3 px-lg-5 py-lg-5 shadow rounded mb-4">
                   <div className="mb-3 text-muted">
                     <span>Published on: {createdAt}</span>
