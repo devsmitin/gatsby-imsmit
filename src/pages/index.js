@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import headGraphic from "../images/undraw_creation_rd0e.svg"
+import headGraphic from "../images/imsmit.jpg"
 import bioGraphic from "../images/undraw_responsive_6c8s.svg"
 
 const IndexPage = () => (
@@ -24,21 +24,33 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-5">
-            <img src={headGraphic} alt="Creator" className="img-fluid my-5" />
+            <div className="stylized-background">
+              <img
+                src={headGraphic}
+                alt="Creator"
+                className="creator-img img-fluid my-5"
+              />
+            </div>
           </div>
-          <div className="col-md-6 offset-md-1 d-flex align-items-center">
-            <div className="content">
-              <h1>
+          <div className="col-md-7 d-flex align-items-center">
+            <div className="content pl-md-4 pl-lg-5">
+              <h1 className="display-font mb-md-4">
                 <span className="shadow-line">Hi, I'm Smit.</span>
               </h1>
-              <p className="lead font-weight-bold mb-md-0 hover-text">
-                I'm a Front-end <span>Developer</span>, <span>Designer</span>, &{" "}
-                <span>Superman</span> from Ahmedabad, India.{" "}
-                <span className="hover-text-hidden">
-                  <span role="img" aria-label="smiley">
-                    😎
-                  </span>
+              <p className="h4 hover-text">
+                I'm a creative Frontend <span>Developer</span>,{" "}
+                <span>Designer</span>, and <span>Superman</span> from India.{" "}
+                <span
+                  role="img"
+                  aria-label="smiley"
+                  className="hover-text-hidden"
+                >
+                  😎
                 </span>
+              </p>
+              <p className="h4 hover-text">
+                I love cinema, music, photography, art and I'm also good at{" "}
+                <span>sketching portraits</span>.
               </p>
             </div>
           </div>
@@ -54,10 +66,10 @@ const IndexPage = () => (
           <div className="col-md-6 d-flex align-items-center">
             <div className="content">
               <p className="lead font-weight-normal hover-text">
-                I love all things about web development & design. I have active
-                or passive participation in making of <span>120+</span> ordinary
-                websites, but I also like to explore latest tech for web
-                development.
+                I love all things about web development &amp; design. I have
+                active or passive participation in making of{" "}
+                <span className="font-weight-strong">100+</span> ordinary
+                websites. I like to explore latest tech for web development.
               </p>
             </div>
           </div>

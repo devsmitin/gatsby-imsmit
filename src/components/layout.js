@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "bootstrap/dist/css/bootstrap.css"
-import "./site.scss"
+import "../style/site.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
                 <li className="list-inline-item">
                   <a
                     href="https://twitter.com/smilingsmit"
-                    className="text-success"
+                    className="text-theme"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Twitter"
@@ -52,7 +52,7 @@ const Layout = ({ children }) => (
                 <li className="list-inline-item">
                   <a
                     href="https://github.com/imsmit"
-                    className="text-success"
+                    className="text-theme"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="GitHub"
@@ -63,7 +63,7 @@ const Layout = ({ children }) => (
                 <li className="list-inline-item">
                   <a
                     href="https://in.linkedin.com/in/imsmit"
-                    className="text-success"
+                    className="text-theme"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="LinkedIn"
