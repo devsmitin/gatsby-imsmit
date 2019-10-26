@@ -1,8 +1,30 @@
+let contentfulConfig
+
+try {
+  // Load the Contentful config from the .contentful.json
+  contentfulConfig = require("./.contentful")
+} catch (_) {}
+
+// Overwrite the Contentful config with environment variables if they exist
+contentfulConfig = {
+  spaceId: process.env.CONTENTFUL_SPACE_ID || contentfulConfig.spaceId,
+  accessToken:
+    process.env.CONTENTFUL_DELIVERY_TOKEN || contentfulConfig.accessToken,
+}
+
+const { spaceId, accessToken } = contentfulConfig
+
+if (!spaceId || !accessToken) {
+  throw new Error(
+    "Contentful spaceId and the delivery token need to be provided."
+  )
+}
+
 module.exports = {
   siteMetadata: {
-    title: `Hello Smit!`,
-    description: `Smit Modi, A Front-end Developer & Designer from Ahmedabad, India.`,
-    author: `smit`,
+    title: `Smit Modi`,
+    description: `Smit Modi, A Creative Front-end Developer & Designer, India.`,
+    author: `Smit`,
     twitterUsername: `@smilingsmit`,
     ogImage: `/static/superman-af4627fe0a9dd31beeded7b058566b22.png`,
     siteURL: `https://imsmit.netlify.com`,
@@ -14,6 +36,20 @@ module.exports = {
       {
         name: "Blogs",
         link: "/blogs",
+      },
+    ],
+    socialLinks: [
+      {
+        name: "Twitter",
+        link: "https://twitter.com/smilingsmit",
+      },
+      {
+        name: "GitHub",
+        link: "https://github.com/imsmit",
+      },
+      {
+        name: "LinkedIn",
+        link: "https://in.linkedin.com/in/imsmit",
       },
     ],
   },
@@ -43,7 +79,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Smit\'s - Personal blog`,
+        name: `Hello Smit! - Personal blog`,
         short_name: `Smit\'s`,
         start_url: `/`,
         background_color: `#fff`,
@@ -54,10 +90,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `9mo5kzws8c9t`,
-        accessToken: `e6e625df6391539b2aaff09ae7a2dcd670bfd1dfb75e5eeeb24291d7f0a9df99`,
-      },
+      options: contentfulConfig,
     },
     {
       resolve: "gatsby-transformer-remark",
@@ -68,10 +101,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Roboto\:100,400,700,900`,
-          `Indie Flower`
-        ],
+        fonts: [`Nunito\:100,400,700,900`, `Mansalva`],
         display: "swap",
       },
     },

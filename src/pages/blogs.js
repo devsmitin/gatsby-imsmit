@@ -9,7 +9,7 @@ const BlogList = ({ data }) => {
   return (
     <Layout>
       <SEO title="My Blogs" />
-      <section className="py-5 border-top">
+      <section className="py-5">
         <div className="container">
           <header className="mb-5">
             <div className="row justify-content-center">

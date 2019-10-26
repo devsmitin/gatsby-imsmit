@@ -9,7 +9,7 @@ const BlogPost = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <div className="single-post border-top">
+      <div className="single-post">
         {/* <div className="fade-wrapper position-absolute">
           <Img
             className="img-fluid featured-img-background"

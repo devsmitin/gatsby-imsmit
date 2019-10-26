@@ -10,6 +10,7 @@ const IndexPage = () => (
   <Layout>
     <SEO
       title="Front-end Developer &amp; Designer"
+      description="A guy calling himself a frontend developer knowing nothing much but html, css &amp; some basic js "
       keywords={[
         `Smit`,
         `Smit Modi`,
@@ -20,7 +21,7 @@ const IndexPage = () => (
         `Gatsby Developer`,
       ]}
     />
-    <header className="py-3 bg-header border-top border-bottom">
+    <header className="py-3 bg-headers">
       <div className="container">
         <div className="row">
           <div className="col-md-5">
@@ -37,20 +38,13 @@ const IndexPage = () => (
               <h1 className="display-font mb-md-4">
                 <span className="shadow-line">Hi, I'm Smit.</span>
               </h1>
-              <p className="h4 hover-text">
-                I'm a creative Frontend <span>Developer</span>,{" "}
-                <span>Designer</span>, and <span>Superman</span> from India.{" "}
-                <span
-                  role="img"
-                  aria-label="smiley"
-                  className="hover-text-hidden"
-                >
-                  😎
-                </span>
+              <p className="lead font-weight-strong">
+                A Frontend Developer. I think. I design. I code. Good at many
+                things. Just struggling to make this line look cooler. Indian.
               </p>
-              <p className="h4 hover-text">
-                I love cinema, music, photography, art and I'm also good at{" "}
-                <span>sketching portraits</span>.
+              <p className="lead font-weight-strong">
+                I love cinema, music, photography, art and I'm also good at
+                sketching portraits.
               </p>
             </div>
           </div>

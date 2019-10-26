@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const SecondPage = () => (
   <Layout>
     <SEO title="Connect With Me" />
-    <header className="py-5 bgli bg-light border-bottom border-top">
+    <header className="py-5 bgli bg-light border-bottom">
         <div className="container">
           <h1 className="font-weight-bolder">Contact</h1>
         </div>

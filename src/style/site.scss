@@ -1,12 +1,14 @@
 $theme-color: #04a07f;
-$body-font: "Roboto", sans-serif;
-$title-font: "Roboto", sans-serif;
-$display-font: "Indie Flower", sans-serif;
+$body-font: "Nunito", sans-serif;
+$title-font: "Nunito", sans-serif;
+$display-font: "Mansalva", sans-serif;
 
 // typography
 html,
 body {
   font-family: $body-font;
+  color: #333;
+  background-color: #fefefe;
 }
 
 .title-font {
