@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
               <ul className="list-inline text-center font-weight-bold text-sm-right float-sm-right">
                 <li className="list-inline-item">
                   <a
-                    href="https://twitter.com/smilingsmit"
+                    href="https://twitter.com/devsmitin"
                     className="text-theme"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -51,7 +51,7 @@ const Layout = ({ children }) => (
                 </li>
                 <li className="list-inline-item">
                   <a
-                    href="https://github.com/imsmit"
+                    href="https://github.com/devsmitin"
                     className="text-theme"
                     target="_blank"
                     rel="noopener noreferrer"
