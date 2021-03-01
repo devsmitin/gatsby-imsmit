@@ -1,21 +1,17 @@
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/gatsby-config/
+ */
+
 module.exports = {
   siteMetadata: {
     title: `Hello Smit!`,
     description: `Smit Modi, A Front-end Developer & Designer from Ahmedabad, India.`,
     author: `smit`,
     twitterUsername: `@smilingsmit`,
-    ogImage: `/static/superman-af4627fe0a9dd31beeded7b058566b22.png`,
-    siteURL: `https://imsmit.netlify.com`,
-    menuLinks: [
-      {
-        name: "Home",
-        link: "/",
-      },
-      {
-        name: "Blogs",
-        link: "/blogs",
-      },
-    ],
+    ogImage: `/static/superman.png`,
+    siteURL: `http://devsmit.in/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -53,13 +49,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `9mo5kzws8c9t`,
-        accessToken: `e6e625df6391539b2aaff09ae7a2dcd670bfd1dfb75e5eeeb24291d7f0a9df99`,
-      },
-    },
-    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [], // just in case those previously mentioned remark plugins sound cool :)
@@ -68,10 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Roboto\:100,400,700,900`,
-          `Indie Flower`
-        ],
+        fonts: [`Montserrat\:100,400,700,900`, `Indie Flower`],
         display: "swap",
       },
     },

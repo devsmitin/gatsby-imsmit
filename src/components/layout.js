@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "bootstrap/dist/css/bootstrap.css"
 import "../style/site.scss"
 
@@ -13,21 +12,12 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
-            menuLinks {
-              name
-              link
-            }
           }
         }
       }
     `}
     render={data => (
       <>
-        <Header
-          menuLinks={data.site.siteMetadata.menuLinks}
-          siteTitle={data.site.siteMetadata.title}
-        />
-
         <main className="page-size">
           {children}
         </main>

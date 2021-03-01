@@ -1,6 +1,6 @@
-$theme-color: #04a07f;
-$body-font: "Roboto", sans-serif;
-$title-font: "Roboto", sans-serif;
+$theme-color: #75ba34;
+$body-font: "Montserrat", sans-serif;
+$title-font: "Montserrat", sans-serif;
 $display-font: "Indie Flower", sans-serif;
 
 // typography
@@ -16,6 +16,10 @@ body {
 
 .display-font {
   font-family: $display-font;
+}
+
+.subtitle {
+  font-size: 2.6rem;
 }
 
 .font-weight-strong {
@@ -44,6 +48,9 @@ p {
   background: linear-gradient(90deg, #fff 13px, transparent 1%) center,
     linear-gradient(#fff 13px, transparent 1%) center, rgba($theme-color, 0.5);
   background-size: 15px 15px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .hover-text {
