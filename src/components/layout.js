@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
         <main className="page-size">
           {children}
         </main>
-        <footer className="py-5 bg-dark text-white">
+        <footer className="py-5 bg-light">
           <div className="container">
             <div className="clearfix">
               <p className="text-center font-weight-bold text-sm-left float-sm-left mb-3">
