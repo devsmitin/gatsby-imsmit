@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets`,
       },
     },
     {
@@ -45,7 +45,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `src/images/superman.png`, // This path is relative to the root of the site.
+        icon: `src/assets/superman.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -57,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Montserrat\:100,400,700,900`, `Indie Flower`],
+        fonts: [`Lato\:300,400,700,900`],
         display: "swap",
       },
     },
